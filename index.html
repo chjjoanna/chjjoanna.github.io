@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+  
+      html {
+          scroll-behavior: smooth;
+      }
+  
+      * {box-sizing: border-box;}/*無敵星星的部分*/
+      body {
+          color: #8ba8b1;
+          font-size: 25px;
+          font-family: 'Oswald', sans-serif;
+          background-color: #899bca;
+      }
+      body, h1, h2, h3, p ,ul {
+          margin: 0;/*清除預設的 margin*/
+      }
+      .wrap {
+          width: 800px;
+          margin-inline: auto;/*區塊左右置中*/
+      }
+      section {
+          background-color: #9cbeda;
+          height: 600px;
+          margin-top: 20px;/*間格距離*/
+          padding: 10px 20px;/*調整內邊距*/
+          border-radius: 20px;
+      }
+      h2 {
+          color: #11110b;
+          font-size: 40px;
+          font-weight: 700;
+      }
+      header {
+          display: flex;/*橫排*/
+          align-items: center;/*讓Logo 跟 Menu 上下居中*/
+          padding:10px 20px;
+          background-color: rgb(243, 249, 252);
+          border-radius: 20px;
+          margin-top: 20px;
+          position: sticky;
+          top: 20px;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+      }
+      header h1.logo {
+          margin-right: auto;/*撐開中間的距離*/
+      }
+      header a {
+          color: #11110b;
+          text-decoration: none;/*清除超連結的底線*/
+          display: block;/*把超連結轉換成區塊(才可以設定寬高)*/
+      }
+      .menu ul {
+          display: flex;/*讓選單也橫排*/
+          gap: 16px;/*關於間格距離的部分*/
+          list-style:none;/*隱藏列表圓點*/
+      }
+      .menu a {
+          font-size: 20px;
+          padding: 6px 16px;/*把可以點選的範圍撐大*/
+          background-color:#a0bff0;
+          border-radius: 20px;
+      }
+      .menu a:hover {/*滑鼠移上去之後的狀態*/
+          color: rgb(225, 241, 255);
+          background-color: #4b4e7a;
+      }
+      a.anchor {/*自訂定位點*/
+          position: relative;
+          top: -114px;/*把定位點往上調*/
+          visibility: hidden;/*可見度為零*/
+      }
+  </style>
+
+
+
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="navigation">
+          <div class="logo">
+            <img src="img/LOGO.png" />
+          </div>
+          <h1 class="logo">
+             <a href="#">Cing Yu bing</a>
+          </h1>
+          <nav class="menu">
+          <ul>
+              
+              <li><a href="#product">watercolor</a></li>
+              <li><a href="#service">gaaaames</a></li>
+              <li><a href="#contact">pixel</a></li>
+          </ul>
+          </nav>
+      </header>
+    <!--navigation-->
+    <div class="navigation">
+      <div class="logo">
+       
+      </div>
+
+    </div>
+    <!--carousel這是輪播-->
+
+
+    <div class="slider">
+      <div class="slide">
+        <img src="./img/S__14401583_0.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./img/S__14401584_0.jpg" />
+      </div>
+      <div class="slide">
+        <img src="./img/S__14401587.jpg"  />
+      </div>
+      <div class="slide">
+        <img src="./img/S__14401585_0.jpg"  />
+      </div>
+      <div class="slide">
+        <img src="./img/S__14401581_0.jpg"  />
+      </div>
+    </div>
+
+ 
+    <!--到這-->
+    <!--blocks-->
+    <div class="blocks">
+      <div class="first-block">
+        <img src="./img/S__14401583_0.jpg" />
+      </div>
+      <div class="three-blocks">
+        <img src="./img/S__14401584_0.jpg" />
+        <img src="./img/S__14401587.jpg" />
+        <img src="./img/S__14401585_0.jpg" />
+      </div>
+      <div class="last-block">
+        <img src="./img/S__14401581_0.jpg" />
+      </div>
+    </div>
+    <!--gray rectangle-->
+    <div class="gray">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore optio nesciunt quo ut dolorum dolore, magni est eius cum modi corrupti ab quaerat quos nulla? Architecto veniam porro suscipit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore optio nesciunt quo ut dolorum dolore, magni est eius cum modi corrupti ab quaerat quos nulla? Architecto veniam porro suscipit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore optio nesciunt quo ut dolorum dolore, magni est eius cum modi corrupti ab quaerat quos nulla? Architecto veniam porro suscipit.
+    </div>
+  </body>
+</html>
